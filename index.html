@@ -1,8 +1,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Curso de oratória do Ap. George Costa. Do medo que te cala ao discurso que prende do primeiro segundo ao último.">
+<meta name="description" content="Curso de oratória do Ap. George Costa. Da trava que te cala à fala que prende do primeiro segundo ao último.">
 <meta property="og:title" content="Como Falar em Público — Ap. George Costa">
-<meta property="og:description" content="O curso de oratória para quem tem o que dizer e trava na hora de dizer.">
+<meta property="og:description" content="O curso de oratória para o púlpito, a reunião, a sala de aula e o vídeo no celular.">
 <meta property="og:type" content="website">
 <meta name="robots" content="noindex">
 <title>Como Falar em Público</title>
@@ -146,6 +146,8 @@ p{margin:0 0 18px}
 .portrait::after{
   content:"";position:absolute;left:-10%;right:-10%;bottom:-2px;height:240px;z-index:2;pointer-events:none;
   background:linear-gradient(to top,var(--void) 22%,rgba(6,9,15,.92) 40%,rgba(6,9,15,.6) 62%,rgba(6,9,15,.22) 82%,transparent);
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 15%,#000 85%,transparent);
+  mask-image:linear-gradient(to right,transparent,#000 15%,#000 85%,transparent);
 }
 .portrait img{width:100%;height:auto;display:block;filter:drop-shadow(0 34px 44px rgba(0,0,0,.55)) contrast(1.03) saturate(1.04)}
 .badge{
@@ -159,23 +161,30 @@ p{margin:0 0 18px}
 .badge-2{right:-8px;bottom:23%;animation:float 7.8s ease-in-out infinite .8s}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
 @media(max-width:980px){
-  .hero{min-height:auto;padding:96px 0 44px;display:block}
+  .hero{min-height:auto;padding:96px 0 0;display:block}
   .hero-grid{grid-template-columns:1fr;gap:6px}
   .hero-copy{text-align:left;padding-bottom:0}
   .hero h1{font-size:clamp(38px,10.5vw,58px)}
   .hero-sub{font-size:17.5px;max-width:none;margin-bottom:28px}
   .hero-cta{gap:11px}
   .hero-cta .btn{flex:1 1 100%;padding:17px 22px;font-size:16px}
-  .portrait{max-width:275px;margin-top:30px;margin-inline:auto}
-  .badge{padding:10px 14px}
-  .badge b{font-size:14px}
+  .portrait{max-width:340px;margin-top:30px;margin-inline:auto;align-self:auto;
+    display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:8px}
+  .portrait::before{top:16%;width:150%;height:78%}
+  .portrait::after{height:120px;left:-14%;right:-14%;
+    background:linear-gradient(to top,var(--void) 30%,rgba(6,9,15,.85) 55%,rgba(6,9,15,.3) 80%,transparent)}
+  .portrait img{order:3;width:100%;max-width:270px;margin-inline:auto}
+  .badge{position:static;order:1;animation:none;padding:9px 14px;flex:0 1 auto;text-align:center}
+  .badge b{font-size:13.5px}
   .badge span{font-size:11px}
-  .badge-1{left:-8px;top:20%}
-  .badge-2{right:-6px;bottom:16%}
 }
 @media(max-width:420px){
-  .portrait{max-width:235px}
-  .badge-1{left:-4px}.badge-2{right:-2px}
+  .portrait{max-width:100%;margin-top:26px;gap:7px}
+  .portrait img{max-width:230px}
+  .portrait::after{height:96px}
+  .badge{padding:8px 12px}
+  .badge b{font-size:12.5px}
+  .badge span{font-size:10.5px}
 }
 
 /* ---------- marquee ---------- */
@@ -379,11 +388,11 @@ footer a:hover{color:var(--amber)}
 
 <!--
   ================================================================
-  LANDING — "COMO FALAR EM PÚBLICO" · Ap. George Costa
+  LANDING · "COMO FALAR EM PÚBLICO" · Ap. George Costa
   Trocar antes de publicar:
     1. CHECKOUT ..... todo href="#comprar" vira a URL da Hotmart
     2. PREÇO ........ blocos marcados com data-editar="preco"
-    3. FOTOS ........ hero e "quem ensina" — hoje são frames das próprias aulas
+    3. FOTOS ........ hero e "quem ensina" (hoje são fotos do próprio curso)
     4. DEPOIMENTOS .. gravar com a turma presencial e inserir antes da oferta
   ================================================================
 -->
@@ -393,7 +402,7 @@ footer a:hover{color:var(--amber)}
 
 <div class="floatbar" id="fbar">
   <span class="fb-t"><b>Como Falar em Público</b> · Ap. George Costa</span>
-  <a href="#comprar" class="btn">Garantir minha vaga</a>
+  <a href="#comprar" class="btn">Garantir meu acesso</a>
 </div>
 
 <header class="hero" id="topo">
@@ -407,7 +416,7 @@ footer a:hover{color:var(--amber)}
     <div class="hero-copy">
       <span class="eyebrow fade" style="animation-delay:.15s">Curso online · Ap. George Costa</span>
       <h1 id="h1">Você tem o que dizer.<br>Agora aprenda <span class="it grad">como dizer.</span></h1>
-      <p class="hero-sub fade" style="animation-delay:1.5s">O curso de oratória para quem tem o que dizer e trava na hora de dizer. Do medo que te cala ao discurso que prende do primeiro segundo ao último.</p>
+      <p class="hero-sub fade" style="animation-delay:1.5s">Curso de oratória para o púlpito, a reunião, a sala de aula e o vídeo gravado no celular. Da trava que te cala à fala que prende do primeiro segundo ao último.</p>
       <div class="hero-cta fade" style="animation-delay:1.7s">
         <a href="#comprar" class="btn btn-lg">Quero falar sem travar</a>
         <a href="#conteudo" class="btn btn-ghost btn-lg">Ver o conteúdo</a>
@@ -433,7 +442,7 @@ footer a:hover{color:var(--amber)}
     <div class="sec-head center">
       <span class="eyebrow rv">O problema não é você</span>
       <h2 class="rv">Não falta conteúdo.<br>Falta <span class="it grad">saber entregar.</span></h2>
-      <p class="lead rv">Você estuda. Você tem história. Você sabe que foi chamado para algo. Mas quando surge o convite para falar, alguma coisa trava — e o “não” já está pronto antes da pergunta terminar.</p>
+      <p class="lead rv">Você estuda. Você tem história. Você sabe que foi chamado para algo. Mas quando surge o convite para falar, alguma coisa trava, e o “não” já está pronto antes da pergunta terminar.</p>
     </div>
     <div class="cards stg rv">
       <div class="card"><span class="num">Medo 01</span><h3>Rejeição</h3><p>“E se não gostarem de mim? E se não gostarem do que eu falar?” Para não ser rejeitado, você prefere o silêncio.</p></div>
@@ -457,12 +466,12 @@ footer a:hover{color:var(--amber)}
     <div class="story-sticky">
       <span class="eyebrow rv">Como funciona</span>
       <h2 class="rv" style="margin:22px 0 20px">Três camadas.<br>Nessa ordem.</h2>
-      <p class="lead rv">A maioria dos cursos começa pela técnica e ignora o que realmente trava a pessoa. Aqui a ordem é outra — e é ela que faz o método funcionar mesmo para quem nunca pegou um microfone.</p>
+      <p class="lead rv">A maioria dos cursos começa pela técnica e ignora o que realmente trava a pessoa. Aqui a ordem é outra, e é ela que faz o método funcionar mesmo para quem nunca pegou um microfone.</p>
     </div>
     <div class="story-steps">
-      <div class="step rv" data-step><span class="k">Camada 01</span><h3>Destravar</h3><p>Antes de qualquer técnica, entender o que te calou. Os quatro medos, as crenças que vieram da infância e os exercícios que quebram a trava de sair da cadeira e falar.</p></div>
-      <div class="step rv" data-step><span class="k">Camada 02</span><h3>Dominar a ferramenta</h3><p>Voz, dicção, ritmo, gesto, olhar e presença. Os vícios de linguagem que você repete sem perceber, o que fazer quando dá branco e como conquistar a plateia nos primeiros trinta segundos.</p></div>
-      <div class="step rv" data-step><span class="k">Camada 03</span><h3>Construir a mensagem</h3><p>A estrutura que transforma qualquer assunto em uma fala memorável: abertura convincente, sua história, um método aplicável e um fechamento que a pessoa leva para casa.</p></div>
+      <div class="step rv" data-step><span class="k">Camada 01</span><h3>Destravar</h3><p>Antes de qualquer técnica, entender o que te calou: os medos que paralisam e as crenças que você carrega desde a infância.</p></div>
+      <div class="step rv" data-step><span class="k">Camada 02</span><h3>Dominar a ferramenta</h3><p>Voz, dicção, ritmo, gesto, olhar e presença. O corpo e a fala treinados para sustentar o que você tem a dizer.</p></div>
+      <div class="step rv" data-step><span class="k">Camada 03</span><h3>Construir a mensagem</h3><p>A estrutura que transforma qualquer assunto em uma fala que a pessoa leva para casa.</p></div>
     </div>
   </div>
 </section>
@@ -477,15 +486,15 @@ footer a:hover{color:var(--amber)}
     <div class="mods rv">
       <article class="mod"><span class="mod-n">01</span><div><h3>Por que você trava</h3><p>Os quatro medos que paralisam qualquer pessoa diante de uma plateia, de onde eles vêm e como quebrar as crenças que te calaram desde criança.</p></div><span class="mod-dur">31 min</span></article>
       <article class="mod"><span class="mod-n">02</span><div><h3>O vocabulário do comunicador</h3><p>Discurso, oratória, retórica, palestra, aula e pregação: o que é cada coisa e por que usar a ferramenta errada estraga a sua fala.</p></div><span class="mod-dur">15 min</span></article>
-      <article class="mod"><span class="mod-n">03</span><div><h3>Os pilares da oratória</h3><p>Ethos, pathos e logos — credibilidade, conexão emocional e conteúdo. Os fundamentos que sustentam todo discurso que funciona, de Aristóteles ao palco de hoje.</p></div><span class="mod-dur">55 min</span></article>
+      <article class="mod"><span class="mod-n">03</span><div><h3>Os pilares da oratória</h3><p>Ethos, pathos e logos: credibilidade, conexão emocional e conteúdo. Os fundamentos que sustentam todo discurso que funciona, de Aristóteles ao palco de hoje.</p></div><span class="mod-dur">55 min</span></article>
       <article class="mod"><span class="mod-n">04</span><div><h3>Limpando a sua fala</h3><p>Vícios de linguagem, gírias, gerúndio, cacofonia e as muletas que você repete sem perceber. Exercícios de dicção, controle de ritmo e o que fazer quando dá branco.</p></div><span class="mod-dur">40 min</span></article>
       <article class="mod"><span class="mod-n">05</span><div><h3>O preparo interno</h3><p>Autoconhecimento, autoestima e o que fazer com os olhares acusativos: aquele que balança a cabeça, o que debocha, o que te encara para te desmontar.</p></div><span class="mod-dur">17 min</span></article>
       <article class="mod"><span class="mod-n">06</span><div><h3>Corpo, voz e presença</h3><p>Postura, gesto, expressão facial, contato visual e entonação. Como entrar em cena, como usar o silêncio e como o volume muda o sentido do que você diz.</p></div><span class="mod-dur">30 min</span></article>
       <article class="mod"><span class="mod-n">07</span><div><h3>Como prender a atenção</h3><p>Rapport, humor, perguntas de dor e a ferramenta mais poderosa de todas: a ilustração. Por que o público esquece o argumento e nunca esquece a história.</p></div><span class="mod-dur">25 min</span></article>
       <article class="mod"><span class="mod-n">08</span><div><h3>Como estruturar a sua fala</h3><p>Abertura convincente, sua história, método aplicável e fechamento. A estrutura de quatro partes que transforma qualquer assunto em apresentação memorável.</p></div><span class="mod-dur">35 min</span></article>
-      <article class="mod"><span class="mod-n">09</span><div><h3>Como montar o conteúdo</h3><p>Ler, explicar e aplicar. Como sair da teoria e fazer sentido na vida de quem ouve — com demonstração completa, do texto à aplicação.</p></div><span class="mod-dur">30 min</span></article>
+      <article class="mod"><span class="mod-n">09</span><div><h3>Como montar o conteúdo</h3><p>Ler, explicar e aplicar. Como sair da teoria e fazer sentido na vida de quem ouve, com demonstração completa do texto à aplicação.</p></div><span class="mod-dur">30 min</span></article>
       <article class="mod"><span class="mod-n">10</span><div><h3>Interpretação de texto para quem fala</h3><p>As regras que evitam o erro mais comum de quem sobe ao palco com um texto na mão: dizer o que o texto não diz. Contexto, sentido original e aplicação honesta.</p></div><span class="mod-dur">74 min</span></article>
-      <article class="mod"><span class="mod-n">11</span><div><h3>Inteligência artificial como ferramenta</h3><p>Os três níveis de uso da IA e a anatomia do prompt em seis partes, para preparar palestras, aulas e mensagens em uma fração do tempo — sem terceirizar o que é seu.</p></div><span class="mod-dur">20 min</span></article>
+      <article class="mod"><span class="mod-n">11</span><div><h3>Inteligência artificial como ferramenta</h3><p>Os três níveis de uso da IA e a anatomia do prompt em seis partes, para preparar palestras, aulas e mensagens em uma fração do tempo, sem terceirizar o que é seu.</p></div><span class="mod-dur">20 min</span></article>
     </div>
   </div>
 </section>
@@ -497,12 +506,12 @@ footer a:hover{color:var(--amber)}
       <h2 class="rv">Você não leva só as aulas</h2>
     </div>
     <div class="incl stg rv">
-      <div class="incl-item"><div class="incl-ic">▶</div><div><h3>5h+ de aula em vídeo</h3><p>Gravadas ao vivo, com turma na sala — você vê as perguntas reais e os exercícios acontecendo.</p></div></div>
-      <div class="incl-item"><div class="incl-ic">↓</div><div><h3>Apostila completa em PDF</h3><p>O mesmo material que os alunos presenciais receberam, para acompanhar e revisar.</p></div></div>
+      <div class="incl-item"><div class="incl-ic">▶</div><div><h3>Mais de 5 horas de aula</h3><p>Você acompanha as perguntas da turma e os exercícios acontecendo, não só a teoria.</p></div></div>
+      <div class="incl-item"><div class="incl-ic">↓</div><div><h3>Apostila completa em PDF</h3><p>O mesmo material que a turma presencial recebeu, para acompanhar e revisar.</p></div></div>
       <div class="incl-item"><div class="incl-ic">✓</div><div><h3>Exercícios práticos</h3><p>Trava-línguas, dicção, situações de comunicação e o roteiro para montar e apresentar a sua fala.</p></div></div>
       <div class="incl-item"><div class="incl-ic">✦</div><div><h3>Biblioteca de prompts</h3><p>Comandos prontos para usar a IA na preparação de palestras, aulas e mensagens.</p></div></div>
       <div class="incl-item"><div class="incl-ic">∞</div><div><h3>Acesso quando quiser</h3><p>No computador ou no celular, no seu ritmo, quantas vezes precisar.</p></div></div>
-      <div class="incl-item"><div class="incl-ic">★</div><div><h3>Certificado</h3><p>Certificado de conclusão para comprovar a formação onde você precisar.</p></div></div>
+      <div class="incl-item"><div class="incl-ic">★</div><div><h3>Certificado</h3><p>Emitido ao concluir o curso, para comprovar a formação onde você precisar.</p></div></div>
     </div>
   </div>
 </section>
@@ -513,7 +522,7 @@ footer a:hover{color:var(--amber)}
       <div>
         <span class="tag">Bônus exclusivo</span>
         <h2>Memória de Comunicador</h2>
-        <p>Dez técnicas científicas para nunca mais esquecer o que você preparou — recordação ativa, repetição espaçada, técnica de Feynman, palácio da memória e mais. O mesmo método que permite ao professor recitar de memória a mensagem central de cada livro da Bíblia.</p>
+        <p>Dez técnicas para nunca mais esquecer o que você preparou: recordação ativa, repetição espaçada, técnica de Feynman, palácio da memória e outras. O mesmo método que permite ao professor recitar de memória a mensagem central de cada livro da Bíblia.</p>
       </div>
       <div>
         <div class="bonus-x">10</div>
@@ -535,7 +544,7 @@ footer a:hover{color:var(--amber)}
       <div class="rv">
         <p>Ele começou numa igreja de vinte pessoas, no interior da Bahia, fugindo para o banheiro toda vez que o culto abria espaço para alguém falar. Quando o banheiro estava ocupado, amarrava e desamarrava o cadarço para sair do campo de visão de quem estava no púlpito.</p>
         <p>Na primeira vez em que pregou, aos 17 anos, ficou tão nervoso que disse que Golias tinha matado Davi. Tinha ouvido a vida inteira que era melhor ficar quieto, porque não sabia falar.</p>
-        <p><strong>Hoje é ele quem ensina outras pessoas a falar.</strong> E ensina isto porque não aprendeu por talento — aprendeu por método.</p>
+        <p><strong>Hoje é ele quem ensina outras pessoas a falar.</strong> E ensina isto porque não aprendeu por talento. Aprendeu por método.</p>
       </div>
       <ul class="creds rv">
         <li><b>Pastor</b><span>Presidente da CEMAP, em Vitória da Conquista (BA)</span></li>
@@ -549,7 +558,7 @@ footer a:hover{color:var(--amber)}
   <div class="wrap">
     <div class="stats stg rv">
       <div class="stat"><div class="n grad" data-count="11">0</div><div class="l">módulos, do medo ao palco</div></div>
-      <div class="stat"><div class="n grad">5h+</div><div class="l">de aula em vídeo</div></div>
+      <div class="stat"><div class="n grad">5h+</div><div class="l">de conteúdo</div></div>
       <div class="stat"><div class="n grad" data-count="10">0</div><div class="l">técnicas de memorização no bônus</div></div>
       <div class="stat"><div class="n grad" data-count="7">0</div><div class="l">dias de garantia incondicional</div></div>
     </div>
@@ -566,19 +575,19 @@ footer a:hover{color:var(--amber)}
       <div class="who-col who-yes">
         <h3>É para você se…</h3>
         <ul>
-          <li><span class="mk y">✓</span><span>Você tem conteúdo, história e chamado — mas trava na hora de falar.</span></li>
+          <li><span class="mk y">✓</span><span>Você tem conteúdo, história e chamado, mas trava na hora de falar.</span></li>
           <li><span class="mk y">✓</span><span>Você prega, lidera célula, ensina ou dirige reuniões e quer fazer isso com método.</span></li>
           <li><span class="mk y">✓</span><span>Você é profissional, empresário ou líder e precisa se comunicar melhor.</span></li>
           <li><span class="mk y">✓</span><span>Você já perdeu oportunidades por não saber se colocar.</span></li>
-          <li><span class="mk y">✓</span><span>Você acha que “não tem o dom” — e quer descobrir que isso nunca foi verdade.</span></li>
+          <li><span class="mk y">✓</span><span>Você acha que “não tem o dom” e quer descobrir que isso nunca foi verdade.</span></li>
         </ul>
       </div>
       <div class="who-col who-no">
         <h3>Não é para você se…</h3>
         <ul>
-          <li><span class="mk n">—</span><span>Você quer fórmula mágica que funcione sem praticar.</span></li>
-          <li><span class="mk n">—</span><span>Você procura só mais um certificado para o currículo.</span></li>
-          <li><span class="mk n">—</span><span>Você não pretende assistir às aulas nem fazer os exercícios.</span></li>
+          <li><span class="mk n">✕</span><span>Você quer fórmula mágica que funcione sem praticar.</span></li>
+          <li><span class="mk n">✕</span><span>Você procura só mais um certificado para o currículo.</span></li>
+          <li><span class="mk n">✕</span><span>Você não pretende assistir às aulas nem fazer os exercícios.</span></li>
         </ul>
       </div>
     </div>
@@ -589,19 +598,19 @@ footer a:hover{color:var(--amber)}
   <div class="wrap">
     <div class="sec-head center">
       <span class="eyebrow rv">Investimento</span>
-      <h2 class="rv">Comece hoje a falar<br>sem travar</h2>
+      <h2 class="rv">Quanto custa parar<br>de travar</h2>
     </div>
     <div class="offer-wrap rv">
       <div class="offer" id="comprar">
         <p class="old" data-editar="preco">De R$ 497</p>
         <p class="price grad" data-editar="preco"><sup>12x R$</sup>24<sub>,70</sub></p>
         <p class="alt" data-editar="preco">ou R$ 247 à vista</p>
-        <a href="#comprar" class="btn btn-lg">Quero garantir minha vaga</a>
+        <a href="#comprar" class="btn btn-lg">Quero garantir meu acesso</a>
         <p class="pay">Pagamento seguro pela Hotmart · Cartão, Pix ou boleto</p>
       </div>
       <div class="warranty">
         <div class="seal">7<small>DIAS</small></div>
-        <p><strong>Risco zero.</strong> Você tem sete dias para assistir, aplicar e decidir. Se entender que não é para você, devolvemos cada centavo — sem pergunta nenhuma.</p>
+        <p><strong>Risco zero.</strong> Você tem sete dias para assistir, aplicar e decidir. Se entender que não é para você, devolvemos cada centavo, sem pergunta nenhuma.</p>
       </div>
     </div>
   </div>
@@ -614,13 +623,12 @@ footer a:hover{color:var(--amber)}
       <h2 class="rv">Perguntas frequentes</h2>
     </div>
     <div class="faq rv">
-      <details><summary>Preciso ser pastor ou pregador?</summary><div class="ans"><p>Não. O curso é de oratória — a técnica é a mesma para o púlpito, a reunião de trabalho, a sala de aula ou um vídeo no celular. Os exemplos vêm da vivência do professor, que é pastor, mas o método serve para qualquer ambiente em que você precise falar.</p></div></details>
-      <details><summary>E se eu for muito tímido?</summary><div class="ans"><p>O curso começa exatamente aí. O professor se declara tímido e conta como fugia para o banheiro para não ser chamado a falar. O primeiro módulo inteiro trata dos medos que travam e de como desmontá-los.</p></div></details>
-      <details><summary>Quanto tempo tenho de acesso?</summary><div class="ans"><p>Você assiste quando quiser, quantas vezes quiser, no computador ou no celular. Todo o material fica disponível na sua área de aluno.</p></div></details>
-      <details><summary>As aulas são ao vivo?</summary><div class="ans"><p>Não. As aulas já estão gravadas e liberadas — foram registradas ao vivo, com turma presencial, o que permite ver as perguntas e os exercícios acontecendo de verdade.</p></div></details>
+      <details><summary>Preciso ser pastor ou pregador?</summary><div class="ans"><p>Não. A técnica de oratória é a mesma para o púlpito, a reunião de trabalho, a sala de aula ou um vídeo no celular. Os exemplos vêm da vivência do professor, que é pastor, mas o método serve para qualquer ambiente em que você precise falar.</p></div></details>
+      <details><summary>E se eu for muito tímido?</summary><div class="ans"><p>O curso começa exatamente aí. O primeiro módulo inteiro trata dos medos que travam e de como desmontá-los, ensinado por alguém que passou por isso.</p></div></details>
+      <details><summary>Quanto tempo tenho de acesso?</summary><div class="ans"><p>O acesso não expira. Todo o material fica na sua área de aluno, para rever sempre que precisar.</p></div></details>
+      <details><summary>As aulas são ao vivo?</summary><div class="ans"><p>Não. Já estão todas gravadas e liberadas, para você assistir no horário que quiser.</p></div></details>
       <details><summary>Recebo certificado?</summary><div class="ans"><p>Sim, com certificado de conclusão ao final do curso.</p></div></details>
-      <details><summary>E se eu não gostar?</summary><div class="ans"><p>Você tem sete dias de garantia incondicional. Se não fizer sentido para você, basta pedir o reembolso e devolvemos o valor integral.</p></div></details>
-    </div>
+          </div>
   </div>
 </section>
 
