@@ -337,7 +337,11 @@ section{position:relative;padding:130px 0}
 }
 .offer::before{content:"";position:absolute;top:-46%;left:50%;transform:translateX(-50%);width:620px;height:620px;background:radial-gradient(circle,rgba(242,183,94,.2),transparent 62%);pointer-events:none}
 .offer > *{position:relative}
-.offer .old{font-size:16px;color:var(--ink-3);text-decoration:line-through;text-decoration-thickness:1.5px}
+.offer .kicker{font-size:13px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);margin-bottom:14px}
+.offer .old{font-size:17px;color:var(--ink-3);text-decoration:line-through;text-decoration-thickness:1.5px}
+.offer-list{list-style:none;padding:0;margin:26px auto 30px;max-width:340px;text-align:left;display:grid;gap:11px}
+.offer-list li{display:flex;gap:11px;font-size:15.5px;color:var(--ink-2);line-height:1.4}
+.offer-list .ok{flex:0 0 20px;height:20px;border-radius:50%;background:rgba(242,183,94,.2);color:var(--amber);display:grid;place-items:center;font-size:11px;font-weight:800;margin-top:1px}
 .offer .price{font-family:var(--disp);font-weight:800;font-size:clamp(58px,9vw,86px);letter-spacing:-.05em;line-height:1;margin:8px 0 6px;font-variant-numeric:tabular-nums}
 .offer .price sup{font-size:.34em;font-weight:600;vertical-align:top;top:.7em;position:relative;letter-spacing:-.02em}
 .offer .price sub{font-size:.34em;font-weight:600;vertical-align:baseline;bottom:0;letter-spacing:-.02em}
@@ -603,15 +607,26 @@ footer a:hover{color:var(--amber)}
     </div>
     <div class="offer-wrap rv">
       <div class="offer" id="comprar">
+        <p class="kicker">Curso completo</p>
         <p class="old" data-editar="preco">De R$ 497</p>
-        <p class="price grad" data-editar="preco"><sup>12x R$</sup>24<sub>,70</sub></p>
-        <p class="alt" data-editar="preco">ou R$ 247 à vista</p>
-        <a href="https://pay.hotmart.com/G107354324O" class="btn btn-lg">Quero garantir meu acesso</a>
+        <p class="price grad" data-editar="preco"><sup>R$</sup>247<sub> à vista</sub></p>
+        <p class="alt" data-editar="preco">ou 12x de R$ 24,70</p>
+        <ul class="offer-list">
+          <li><span class="ok">✓</span><span>11 módulos</span></li>
+          <li><span class="ok">✓</span><span>Mais de 5 horas de aulas</span></li>
+          <li><span class="ok">✓</span><span>Apostila em PDF</span></li>
+          <li><span class="ok">✓</span><span>Exercícios práticos</span></li>
+          <li><span class="ok">✓</span><span>Biblioteca de prompts</span></li>
+          <li><span class="ok">✓</span><span>Certificado</span></li>
+          <li><span class="ok">✓</span><span>Bônus: Memória de Comunicador</span></li>
+          <li><span class="ok">✓</span><span>Acesso sem prazo de expiração</span></li>
+        </ul>
+        <a href="https://pay.hotmart.com/G107354324O" class="btn btn-lg">Quero começar agora</a>
         <p class="pay">Pagamento seguro pela Hotmart · Cartão, Pix ou boleto</p>
       </div>
       <div class="warranty">
-        <div class="seal">7<small>DIAS</small></div>
-        <p><strong>Risco zero.</strong> Você tem sete dias para assistir, colocar em prática e decidir. Se não for para você, devolvemos o valor inteiro, sem perguntar nada.</p>
+        <div class="seal" style="border:none;font-size:34px">🛡️</div>
+        <p><strong>7 dias de garantia.</strong> Assista, coloque em prática e decida. Se não for para você, devolvemos o valor inteiro, sem perguntar nada.</p>
       </div>
     </div>
   </div>
