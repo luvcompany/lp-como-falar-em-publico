@@ -278,6 +278,16 @@ section{position:relative;padding:130px 0}
 .step p{margin:0;color:var(--ink-2);font-size:15.5px}
 @media(max-width:900px){.story{grid-template-columns:1fr;gap:40px}.story-sticky{position:static}}
 
+/* ---------- resultados ---------- */
+.outcomes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.outcome{display:flex;gap:15px;align-items:center;padding:20px 22px;border-radius:14px;
+  border:1px solid var(--line);background:linear-gradient(160deg,rgba(21,30,51,.5),rgba(10,15,26,.5));
+  transition:border-color .35s,transform .35s,background .35s}
+.outcome:hover{border-color:rgba(242,183,94,.32);transform:translateY(-3px);background:linear-gradient(160deg,rgba(21,30,51,.85),rgba(10,15,26,.7))}
+.outcome .n{flex:0 0 30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:800;
+  background:linear-gradient(140deg,rgba(242,183,94,.25),rgba(242,183,94,.08));border:1px solid rgba(242,183,94,.35);color:var(--amber)}
+.outcome p{margin:0;font-size:16px;color:var(--ink);line-height:1.4}
+
 /* ---------- incluído ---------- */
 .incl{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:16px}
 .incl-item{display:flex;gap:16px;align-items:flex-start;padding:24px;border-radius:16px;border:1px solid var(--line);background:rgba(21,30,51,.42);transition:background .4s,border-color .4s,transform .4s}
@@ -499,6 +509,26 @@ footer a:hover{color:var(--amber)}
       <article class="mod"><span class="mod-n">09</span><div><h3>IA para preparar sua fala</h3><p>Aprenda a usar a inteligência artificial do jeito certo para preparar palestras, aulas e mensagens em muito menos tempo, sem perder a sua voz.</p></div><span class="mod-dur">20 min</span></article>
       <article class="mod"><span class="mod-n">10</span><div><h3>Cada fala tem seu jeito</h3><p>Palestra, discurso, aula e pregação são coisas diferentes, e cada uma pede um jeito de falar. E a estrutura da palestra que funciona: abertura, história, método e fechamento.</p></div><span class="mod-dur">19 min</span></article>
       <article class="mod"><span class="mod-n">11</span><div><h3>Sua palestra do zero</h3><p>Você monta a sua própria palestra: seu método, seu fechamento e o esboço completo, com a ajuda da inteligência artificial.</p></div><span class="mod-dur">32 min</span></article>
+    </div>
+  </div>
+</section>
+
+<section id="resultados" class="glow-top">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow rv">Resultado prático</span>
+      <h2 class="rv">Ao final do curso, você<br><span class="it grad">será capaz de:</span></h2>
+    </div>
+    <div class="outcomes stg rv">
+      <div class="outcome"><span class="n">✓</span><p>Falar diante de uma plateia com mais segurança</p></div>
+      <div class="outcome"><span class="n">✓</span><p>Organizar uma mensagem do início ao fim</p></div>
+      <div class="outcome"><span class="n">✓</span><p>Controlar melhor sua voz e o seu ritmo</p></div>
+      <div class="outcome"><span class="n">✓</span><p>Evitar os vícios de linguagem</p></div>
+      <div class="outcome"><span class="n">✓</span><p>Usar gestos e contato visual a seu favor</p></div>
+      <div class="outcome"><span class="n">✓</span><p>Prender a atenção da audiência</p></div>
+      <div class="outcome"><span class="n">✓</span><p>Contar histórias de forma envolvente</p></div>
+      <div class="outcome"><span class="n">✓</span><p>Preparar uma pregação, aula ou palestra</p></div>
+      <div class="outcome"><span class="n">✓</span><p>Usar a IA para organizar sua preparação</p></div>
     </div>
   </div>
 </section>
